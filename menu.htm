@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Menu</title>
+<base target="main">
+<SCRIPT LANGUAGE = "JavaScript">
+    <!-- hide code from stupid browsers
+
+    function PreloadImages(path) {
+        for(var i = 1; i<=11; i++) {
+            this[i]=new Image();
+            this[i].src= path + i + '.gif'
+        }
+        return this;
+    }
+    over=new PreloadImages('images/menu/over');
+    norm=new PreloadImages('images/menu/norm');
+
+    function rollOn(num) {
+        if(document.images) {
+            eval('document.images["norm'+num+'"].src=over[num].src');
+        }
+    }
+    function rollOff(num) {
+        if(document.images) {
+            eval('document.images["norm'+num+'"].src=norm[num].src');
+        }
+    }
+
+    // stupid browsers can see again -->
+</SCRIPT>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF">
+
+<TABLE BORDER = 0 CELLPADDING = 0 CELLSPACING = 0>
+<TR><TD>
+<img border="0" src="images/menu/mars.gif" alt="Scott Danzig" width="85" height="85">
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "welcome.htm" onMouseover = "rollOn(1)" onMouseout = "rollOff(1)"><IMG BORDER = 0 NAME = "norm1" SRC = "images/menu/norm1.gif" ALT = "Introduction" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "bio.htm" onMouseover = "rollOn(2)" onMouseout = "rollOff(2)"><IMG BORDER = 0 NAME = "norm2" SRC = "images/menu/norm2.gif" ALT = "Biographical Information" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "resume.htm" onMouseover = "rollOn(3)" onMouseout = "rollOff(3)"><IMG BORDER = 0 NAME = "norm3" SRC = "images/menu/norm3.gif" ALT = "Resume" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "poetry.htm" onMouseover = "rollOn(4)" onMouseout = "rollOff(4)"><IMG BORDER = 0 NAME = "norm4" SRC = "images/menu/norm4.gif" ALT = "Poetry" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "pictures.htm" onMouseover = "rollOn(5)" onMouseout = "rollOff(5)"><IMG BORDER = 0 NAME = "norm5" SRC = "images/menu/norm5.gif" ALT = "Pictures" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "si.htm" onMouseover = "rollOn(6)" onMouseout = "rollOff(6)"><IMG BORDER = 0 NAME = "norm6" SRC = "images/menu/norm6.gif" ALT = "Split Infinity" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "recipes.htm" onMouseover = "rollOn(7)" onMouseout = "rollOff(7)"><IMG BORDER = 0 NAME = "norm7" SRC = "images/menu/norm7.gif" ALT = "Role-playing" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "imagine.htm" onMouseover = "rollOn(8)" onMouseout = "rollOff(8)"><IMG BORDER = 0 NAME = "norm8" SRC = "images/menu/norm8.gif" ALT = "Imagine" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "anime.htm" onMouseover = "rollOn(9)" onMouseout = "rollOff(9)"><IMG BORDER = 0 NAME = "norm9" SRC = "images/menu/norm9.gif" ALT = "Anime" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "guest.htm" onMouseover = "rollOn(10)" onMouseout = "rollOff(10)"><IMG BORDER = 0 NAME = "norm10" SRC = "images/menu/norm10.gif" ALT = "Guestbook" width="85" height="37"></A>
+</TD></TR>
+<TR height="37"><TD>
+    <A HREF = "mailto:scottdanzig@yahoo.com" onMouseover = "rollOn(11)" onMouseout = "rollOff(11)"><IMG BORDER = 0 NAME = "norm11" SRC = "images/menu/norm11.gif" ALT = "Emailing me" width="85" height="37"></A>
+</TD></TR>
+<TR><TD>
+<img border="0" src="images/menu/horizon.gif" alt="End of menu" width="85" height="19">
+</TD></TR>
+</TABLE>
+
+</body>
+
+</html>
