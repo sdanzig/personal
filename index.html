@@ -1,46 +1,108 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Menu</title>
+<base target="main">
+<SCRIPT LANGUAGE = "JavaScript">
+    <!-- hide code from stupid browsers
 
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-		<meta name="generator" content="Adobe GoLive" />
-		<title>Your Website</title>
-		<style type="text/css" media="screen"><!--
-			#outline { position: relative; height: 800px; width: 800px; margin: 18px auto 0; border: solid 1px #999; }
-			#caption { width: 260px; left: 48px; top: 318px; position: absolute; visibility: visible; }
-			#text { left: 336px; top: 318px; position: absolute; width: 400px; visibility: visible; margin-top: 10px; }
-			#title { width: 800px; top: 100px; position: absolute; visibility: visible; }
-			p { color: #666; font-size: 16px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: normal; margin-top: 0; }
-			h1 { color: #778fbd; font-size: 20px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: 500; line-height: 32px; margin-top: 4px; }
-			h2 { color: #778fbd; font-size: 18px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: normal; margin: 0.83em 0 0; }
-			h3 { color: #666; font-size: 60px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: bold; text-align: center; letter-spacing: -1px; width: auto; }
-			h4 { font-weight: bold; text-align: center; margin: 1.33em 0; }
-			a { color: #666; text-decoration: underline; }
-		--></style>
-	</head>
+    function PreloadImages(path) {
+        for(var i = 1; i<=11; i++) {
+            this[i]=new Image();
+            this[i].src= path + i + '.gif'
+        }
+        return this;
+    }
+    over=new PreloadImages('images/menu/over');
+    norm=new PreloadImages('images/menu/norm');
 
-	<body>
-		<div id="outline">
-			<img src="images/gradient.jpg" alt="" height="304" width="800" border="0" />
-			<div id="title">
-				<h3>Your website.</h3>
-			</div>
-			<div id="caption">
-				<h1>Create and publish your own website quickly and easily using iWeb, Pages, and many other applications available<br />
-					for Mac OS X.</h1>
-			</div>
-			<div id="text">
-				<p>It’s a snap to create and publish your own website from your Mac. When your site is ready, it’s just as easy to publish it.</p>
-				<p>Open System Preferences and click Sharing, then select Web Sharing.</p>
-				<p>You’re done. Your site is now available on your private network at home or work.</p>
-				<p>If you’re connected to the Internet, your website can also be available to friends everywhere. Just send them the address shown in Sharing preferences.</p>
-				<h2>Apache Power</h2>
-				<p>Web Sharing is built on the <a href="http://www.apache.org/httpd">Apache</a> web server, an industry standard technology included with Mac OS X. For more information about the Apache web server, see the <a href="/manual/">Apache manual</a>.</p>
-			</div>
-			
-		</div>
-		
-	</body>
+    function rollOn(num) {
+        if(document.images) {
+            eval('document.images["norm'+num+'"].src=over[num].src');
+        }
+    }
+    function rollOff(num) {
+        if(document.images) {
+            eval('document.images["norm'+num+'"].src=norm[num].src');
+        }
+    }
 
+    // stupid browsers can see again -->
+</SCRIPT>
+</head>
+
+<frameset cols="214,*">
+  <frame name="contents" target="main" src="menu.htm" scrolling="auto" marginwidth="12" marginheight="12" noresize>
+  <frame name="main" src="welcome.htm" scrolling="auto" target="_self">
+  <noframes>
+
+  <body bgcolor="#000000" text="#FFFFFF">
+  <div align="left">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="11%" valign="top">
+  <TABLE BORDER = 0 CELLPADDING = 0 CELLSPACING = 0>
+    <TR><TD>
+    <img border="0" src="images/menu/mars.gif" alt="Scott Danzig" width="85" height="85">
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "bio.htm" onMouseover = "rollOn(2)" onMouseout = "rollOff(2)"><IMG BORDER = 0 NAME = "norm2" SRC = "images/menu/norm2.gif" ALT = "Biographical Information" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "resume.htm" onMouseover = "rollOn(3)" onMouseout = "rollOff(3)"><IMG BORDER = 0 NAME = "norm3" SRC = "images/menu/norm3.gif" ALT = "Resume" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "poetry.htm" onMouseover = "rollOn(4)" onMouseout = "rollOff(4)"><IMG BORDER = 0 NAME = "norm4" SRC = "images/menu/norm4.gif" ALT = "Poetry" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "pictures.htm" onMouseover = "rollOn(5)" onMouseout = "rollOff(5)"><IMG BORDER = 0 NAME = "norm5" SRC = "images/menu/norm5.gif" ALT = "Pictures" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "si.htm" onMouseover = "rollOn(6)" onMouseout = "rollOff(6)"><IMG BORDER = 0 NAME = "norm6" SRC = "images/menu/norm6.gif" ALT = "Split Infinity" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "recipes.htm" onMouseover = "rollOn(7)" onMouseout = "rollOff(7)"><IMG BORDER = 0 NAME = "norm7" SRC = "images/menu/norm7.gif" ALT = "Role-playing" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "imagine.htm" onMouseover = "rollOn(8)" onMouseout = "rollOff(8)"><IMG BORDER = 0 NAME = "norm8" SRC = "images/menu/norm8.gif" ALT = "Imagine" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+       <A HREF = "anime.htm" onMouseover = "rollOn(9)" onMouseout = "rollOff(9)"><IMG BORDER = 0 NAME = "norm9" SRC = "images/menu/norm9.gif" ALT = "Anime" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "guest.htm" onMouseover = "rollOn(10)" onMouseout = "rollOff(10)"><IMG BORDER = 0 NAME = "norm10" SRC = "images/menu/norm10.gif" ALT = "Guestbook" width="85" height="37"></A>
+    </TD></TR>
+    <TR height="37"><TD>
+        <A HREF = "mailto:scottdanzig@yahoo.com" onMouseover = "rollOn(11)" onMouseout = "rollOff(11)"><IMG BORDER = 0 NAME = "norm11" SRC = "images/menu/norm11.gif" ALT = "Emailing me" width="85" height="37"></A>
+    </TD></TR>
+    <TR><TD>
+    <img border="0" src="images/menu/horizon.gif" alt="End of menu" width="85" height="19">
+    </TD></TR>
+  </TABLE>
+
+        </td>
+        <td width="89%" background="images/bluemyst.jpg">
+
+<font face="Times New Roman" size=5 color="#FFFF00">
+<p align="center"><img border="0" src="images/header.jpg" width="100%" height="50" alt="Scott Danzig's Home Page"></p>
+<p>
+<img border="0" src="images/mets_scott.jpg" align="right" alt="Picture of Scott Danzig" width="363" height="400"></font><font face="Times New Roman" size=5>Greetings world,</p>
+<p>Thanks for taking the time to visit. From here, you can:</p>
+<ul>
+    <li>View a brief overview of my biographical information</li>
+    <li>Scope out my resume in case you're curious</li>
+    <li>See the spawn of my poetic moments</li>
+    <li>See an overview of the &quot;multi-user dimension&quot; called Split Infinity that I spend a good deal of my time programming and hanging out on</li>
+    <li>Visit the top notch Angelic Dreams web site maintained by Imagine</li>
+    <li>Learn about Japanese animation (anime) and how it relates to me</li>
+    <li>Sign another one of those guest books so I can see how many swimsuit models are stalking me</li>
+    <li>Email me using just one of my 50+ addresses</li>
+</ul>
+</font>
+</td>
+    </table>
+  </div>
+  </body>
+  </noframes>
+</frameset>
 </html>
